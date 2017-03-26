@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Us</title>
+	<style>  
+	form label{  
+		display: inline-block;  
+ 		text-align: right;  
+		width: 175px;}  
+	input[type=text] {width: 175px; }
+	select {
+        width:175px;
+    }
+    textarea{
+    	vertical-align: text-top;
+    	height: 100px;
+    }
+	</style> 
+</head>
+<body>
+<div>
+<form>
+	<br>
+	<div style="width:50%; text-align: justify; align-content: center; margin: 0 auto;">
+		<label for="firstname">First Name:</label> <input type="text" name="FirstName"><br/><br/>
+		<label for="lastname">Last Name:</label> <input type="text" name="LastName"><br/><br/>
+		<label for="email">Email:</label> <input type="text" name="Email"><br/><br/>
+		<label for="license">Type of License:</label>
+		<input type="radio" name="license" value="Business" checked/>Business
+		<input type="radio" name="license" value="Personal"> Personal<br/><br/>
+		<label for="reason">Reason:</label>
+		<select name="reason">
+			<option value="Reason">Select a Reason</option>
+			<option value="Software">Software Support</option>
+			<option value="Hardware">Hardware Support</option>
+			<option value="Information">Information Request</option> 
+		</select>
+		<br/><br/>
+		<label for="AdditionalInfo">Additional Information:</label>
+		<textarea name="AdditionalInfo"></textarea><br/><br/>
+		<label for="Terms"></label>
+		<input type="checkbox" name="terms" value="Terms"/>I have read the terms of service.<br/><br/>
+		<label for="Submit"></label>
+		<input type="submit" value="Send Request">
+	</div>
+</form>
+</div>
+</body>
+</html>
