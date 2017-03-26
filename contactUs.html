@@ -5,6 +5,7 @@
 	<style>  
 	form label{  
 		display: inline-block;  
+		white-space: nowrap;
  		text-align: right;  
 		width: 175px;}  
 	input[type=text] {width: 175px; }
@@ -21,13 +22,13 @@
 <div>
 <form>
 	<br>
-	<div style="width:50%; text-align: justify; align-content: center; margin: 0 auto;">
+	<div style="width:50%; text-align: justify; align-content: center; margin: 0 auto;white-space: nowrap;">
 		<label for="firstname">First Name:</label> <input type="text" name="FirstName"><br/><br/>
 		<label for="lastname">Last Name:</label> <input type="text" name="LastName"><br/><br/>
 		<label for="email">Email:</label> <input type="text" name="Email"><br/><br/>
 		<label for="license">Type of License:</label>
 		<input type="radio" name="license" value="Business" checked/>Business
-		<input type="radio" name="license" value="Personal"> Personal<br/><br/>
+		<input type="radio" name="license" value="Personal"/> Personal<br/><br/>
 		<label for="reason">Reason:</label>
 		<select name="reason">
 			<option value="Reason">Select a Reason</option>

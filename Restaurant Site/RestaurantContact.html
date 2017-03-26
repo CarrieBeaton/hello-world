@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Contact Us</title>
+	<style>  
+	form label{  
+		display: inline-block;  
+		white-space: nowrap;
+ 		text-align: justify;
+ 		margin-left: -3px;  
+		width: 200px;}  
+	input[type=text] {width: 175px; 
+					display: inline-block;  
+					white-space: nowrap;}
+	select {
+        width:175px;
+    }
+    textarea{
+    	vertical-align: text-top;
+    	height: 100px;
+    }
+    input[type="radio"] {
+ 		margin-right: 0;
+	}
+	</style> 
+</head>
+<body>
+	<form>
+	<center><h1>Carrie's Italian Cuisine</h1></center>
+	<hr>
+	<a href="RestaurantSite.html" target="_blank" style="color: #0000FF">Home</a>
+	<a href="RestaurantMenu.html" target="_blank" style="padding-left:5em;color: #0000FF">Menu</a>
+	<a href="RestaurantContact.html" target="_blank" style="padding-left:5em;color: #0000FF">Contact Us</a>
+	<hr>
+	<div>
+	<br>
+	<div style="width:50%; text-align: justify-all; align-content: center; margin: 0 auto;white-space: nowrap;">
+		<label for="name">Name:</label> <input type="text" name="Name"><br/><br/>
+		<label for="email">Email:</label> <input type="text" name="Email"><br/><br/>
+		<label for="phone">Phone:</label> <input type="text" name="Phone"><br/><br/>
+		<label for="reason">Reason for Inquiry:</label>
+		<select name="reason">
+			<option value="Catering">Catering</option>
+			<option value="Party">Private Party</option>
+			<option value="Feedback">Feedback</option>
+			<option value="Other">Other</option> 
+		</select>
+		<br/><br/>
+		<label for="AdditionalInfo">Additional Information:</label>
+		<textarea name="AdditionalInfo"></textarea><br/><br/>
+		<label for="returningGuest">Have you been to the restaurant?</label>&nbsp;&nbsp;
+		<input type="radio" name="returningGuest" value="No" checked/>No
+		<input type="radio" name="returningGuest" value="Yes"/>Yes<br/><br/>
+		<label for="daysToContact">Best days to contact you:</label>
+		<input type="checkbox" name="contact" value="M"/>M
+		<input type="checkbox" name="contact" value="T"/>T
+		<input type="checkbox" name="contact" value="W"/>W
+		<input type="checkbox" name="contact" value="Th"/>Th
+		<input type="checkbox" name="contact" value="F"/>F
+		<br/><br/>
+	</div>
+	<br>
+	<div>
+    <hr>
+	    <center>
+	    <p>140 Main St. Alton, NH 03809 <br>
+	    	 603-875-5333
+	    </p>
+	    </center>
+    <hr>
+    </div>
+</body>
+</html>
