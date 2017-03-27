@@ -2,40 +2,58 @@
 <html lang="en-US">
 <head>
 	<title>Contact Us</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link href="restaurantStyles.css" 
+      rel="stylesheet" 
+      type="text/css" />
 	<style>  
-	form label{  
-		display: inline-block;  
-		white-space: nowrap;
- 		text-align: justify;
- 		margin-left: -3px;  
-		width: 200px;}  
-	input[type=text] {width: 175px; 
-					display: inline-block;  
-					white-space: nowrap;}
-	select {
-        width:175px;
-    }
-    textarea{
-    	vertical-align: text-top;
-    	height: 100px;
-    }
-    input[type="radio"] {
- 		margin-right: 0;
-	}
+		form label{  
+			display: inline-block;  
+			white-space: nowrap;
+	 		text-align: justify;
+			width: 200px;
+			padding-right: 25px;
+		}  
+		input[type=text] {
+			width: 175px; 
+			display: inline-block;  
+			white-space: nowrap;
+		}
+		select {
+	        width:175px;
+	    }
+	    textarea{
+	    	vertical-align: text-top;
+	    	height: 100px;
+	    	width: 175px;
+	    }
+	    input[type="radio"] {
+	 		margin-right: 0;
+		}
+		.description {
+                width:50%; 
+                text-align: justify-all; 
+                align-content: center; 
+                margin: 0 auto;
+                white-space: nowrap;
+            }
 	</style> 
 </head>
 <body>
 	<form>
 	<center><h1>Carrie's Italian Cuisine</h1></center>
 	<hr>
-		<a href="RestaurantSite.html" style="color: #0000FF">Home</a>
-		<a href="RestaurantMenu.html" style="padding-left:5em;color: #0000FF">Menu</a>
-		<a href="RestaurantContact.html" style="padding-left:5em;color: #0000FF">Contact Us</a>
+	<div class="menu"> 
+		<ul>
+			<li><a href=RestaurantSite.html>Home</a></li>
+			<li><a href="RestaurantMenu.html">Menu</a></li>
+			<li><a href="RestaurantContact.html">Contact Us</a></li>
+		</ul>	
+	</div>
+	<br><br>
 	<hr>
 	<div>
 	<br>
-	<div style="width:50%; text-align: justify-all; align-content: center; margin: 0 auto;white-space: nowrap;">
+	<div class="description">
 		<label for="name">Name:</label> <input type="text" name="Name"><br/><br/>
 		<label for="email">Email:</label> <input type="text" name="Email"><br/><br/>
 		<label for="phone">Phone:</label> <input type="text" name="Phone"><br/><br/>
@@ -49,7 +67,7 @@
 		<br/><br/>
 		<label for="AdditionalInfo">Additional Information:</label>
 		<textarea name="AdditionalInfo"></textarea><br/><br/>
-		<label for="returningGuest">Have you been to the restaurant?</label>&nbsp;&nbsp;
+		<label for="returningGuest">Have you been to the restaurant?</label>
 		<input type="radio" name="returningGuest" value="No" checked/>No
 		<input type="radio" name="returningGuest" value="Yes"/>Yes<br/><br/>
 		<label for="daysToContact">Best days to contact you:</label>
@@ -63,11 +81,10 @@
 	<br>
 	<div>
     <hr>
-	    <center>
-	    <p>140 Main St. Alton, NH 03809 <br>
-	    	 603-875-5333
-	    </p>
-	    </center>
+		<div class="footer">
+    		140 Main St. Alton, NH 03809 <br>
+	    	 603-875-5333<br>
+	    </div>
     <hr>
     </div>
 </body>

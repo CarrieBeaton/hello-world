@@ -2,36 +2,49 @@
 <html lang="en-US">
 <head>
 	<title>Home Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="restaurantStyles.css" 
+        rel="stylesheet" 
+        type="text/css"/>
+        <style type="text/css">
+            .description {
+                border:1px solid black; 
+                width:400px; 
+                align-content: center; 
+                margin:0 auto;
+            }
+        </style>
 </head>
 <body>
 	<center><h1>Carrie's Italian Cuisine</h1></center>
 	<hr>
-    	<a href="RestaurantSite.html" style="color: #0000FF">Home</a>
-    	<a href="RestaurantMenu.html" style="padding-left:5em;color: #0000FF">Menu</a>
-    	<a href="RestaurantContact.html" style="padding-left:5em;color: #0000FF">Contact Us</a>
+    <div class="menu"> 
+        <ul>
+            <li><a href=RestaurantSite.html>Home</a></li>
+            <li><a href="RestaurantMenu.html">Menu</a></li>
+            <li><a href="RestaurantContact.html">Contact Us</a></li>
+        </ul>   
+    </div>
+    <br><br>
 	<hr>
-	 <center><img src="Images\authentic_italian_food.jpg"
-    alt="Autentic Italian Food" 
-    style="width: 400px;"
-    /></center>
-    <div style="border:1px solid black; width:400px; align-content: center; margin: 0 auto;">
+	   <img src="Images\authentic_italian_food.jpg"
+            alt="Autentic Italian Food" 
+            style="width: 400px;display:block;margin-left: auto;margin-right: auto;"
+            /><br>
+    <div class="description">
     <p> Restaurant Description <br>
     	Serving Authentic Italian food using only the freshest ingredients. 
     	From pasta to pizza, we offer a comprehensive selection with a menu that is
     	constantly evolving and changing offer our guests the best variety of Italian food
-    	around!
+    	around!<br>
     </p>
-    <br>
     </div>
     <br>
         <div>
         <hr>
-        <center>
-        <p>140 Main St. Alton, NH 03809 <br>
-        	 603-875-5333
-        </p>
-        </center>
+            <div class="footer">
+                140 Main St. Alton, NH 03809 <br>
+                 603-875-5333<br>
+            </div>
         <hr>
         </div>
 </body>

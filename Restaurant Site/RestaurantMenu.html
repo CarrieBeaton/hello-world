@@ -2,6 +2,9 @@
 <html lang="en-US">
 <head>
 	<title>Menu</title>
+	 <link href="restaurantStyles.css" 
+      rel="stylesheet" 
+      type="text/css"/>
 	<style type="text/css">
     	th {
 		  height: 50px;
@@ -12,18 +15,26 @@
 		td {
 		  text-align: center;
 		}
+		table{
+			width:100%;
+		}
 	</style>
 </head>
 <body>
 	<center><h1>Carrie's Italian Cuisine</h1></center>
 	<hr>
-		<a href="RestaurantSite.html" style="color: #0000FF">Home</a>
-		<a href="RestaurantMenu.html" style="padding-left:5em;color: #0000FF">Menu</a>
-		<a href="RestaurantContact.html" style="padding-left:5em;color: #0000FF">Contact Us</a>
+	<div class="menu"> 
+		<ul>
+			<li><a href=RestaurantSite.html>Home</a></li>
+			<li><a href="RestaurantMenu.html">Menu</a></li>
+			<li><a href="RestaurantContact.html">Contact Us</a></li>
+		</ul>	
+	</div>
+	<br><br>
 	<hr>
 	<div>
 		<p>
-			<table width="100%">
+			<table>
 				<tr>
 					<th>Burger and Fries</th>
 					<th>Hot Dog and Chips</th>
@@ -89,11 +100,10 @@
 	<br>
 	<div>
     <hr>
-	    <center>
-	    <p>140 Main St. Alton, NH 03809 <br>
-	    	 603-875-5333
-	    </p>
-	    </center>
+    	<div class="footer">
+    		140 Main St. Alton, NH 03809 <br>
+	    	 603-875-5333<br>
+	    </div>
 	    <hr>
     </div>
 </body>
