@@ -1,0 +1,25 @@
+  th {
+      font-weight: bold;
+      text-align: center;
+      background: grey;
+      border-bottom:1pt solid black;
+       border: 1px solid black;
+   }
+  td {
+      text-align: center;
+  
+      border:1px solid black;
+   }
+  tr{
+    border-bottom:1pt;
+    border-color:solid black;
+   
+  }
+  table{
+    table-layout: fixed;
+    border-collapse:collapse;
+    width:100%;
+    border-style: solid;
+    border: 1px solid black;
+  }
+
