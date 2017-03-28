@@ -16,39 +16,39 @@
             color: blue;
         }
         a:hover {
-          text-decoration: underline;
-          color: green;
+            text-decoration: underline;
+            color: green;
         }
         .backgroundImage{
-            background: url("Images/PINK-FLOYD-WALL.jpg") repeat;
-            width: 100%;
+            background: url("Images/PINK-FLOYD-WALL.jpg") repeat-y;
+            width: 300px;
             height: 100%;
             position: fixed;
             background-size: 300px;
+            position: center right;
+            right: 0px;
             opacity: 0.12;
         }
         .image{
-              background: url("Images/PinkFloydTheWall.jpg");
-              width: 300px;
-              height: 300px;
-              background-size: 300px;
-              margin-right: auto;
-              margin-left: auto;
+            background: url("Images/PinkFloydTheWall.jpg") repeat-x;
+            width: 100%;
+            height: 300px;
+            background-size: 300px;
+            background-position: top right;
         }
     </style>
 </head>
 <body>
+  <div class="backgroundImage"></div>
   <div>
     <p>  
     <div class="image"></div>
     <br/>
-        <span>
+
        <center><h1 style="color:red;font-family: Garamond">The Wall</h1></center>
             <a href="http://www.pinkfloyd.com/" target="_blank">Pink Floyd</a>
-        </span>
         <center><h3>November, 30 1979</h3></center>
         <hr>
-        <div class="backgroundImage"></div>
         <center><h2 style="font-family: Georgia">Band Members and Producers</h2></center>
         <ul style="font-style:italic;font-size: 18px">
             <li>David Gilmour - guitarist and singer</li>

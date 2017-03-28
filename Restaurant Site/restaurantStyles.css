@@ -17,13 +17,24 @@
 	padding:0; 
 	border:0;
 }
-.menu ul li a { 
+.menu ul li a{
 	float:left; 
 	margin:0; 
 	padding:13px 10px;  
-	text-decoration:none; border:1px;
-	color:blue;
+	border:1px;
+}
+.menu ul li a:link{
 	text-decoration: underline;
+	color: blue;
+}
+.menu ul li a:visited{
+	color:green;
+}
+.menu ul li a:hover{
+	font-weight: bold;
+}
+.menu ul li a:active{
+  text-decoration: none;
 }
 .footer {
     text-align: center;
