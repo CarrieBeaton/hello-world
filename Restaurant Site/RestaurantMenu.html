@@ -6,17 +6,24 @@
       rel="stylesheet" 
       type="text/css"/>
 	<style type="text/css">
-    	th {
-		  height: 50px;
-		  font-weight: bold;
-		  text-align: center;
-		  font-size: 18pt
-		}
-		td {
-		  text-align: center;
-		}
 		table{
-			width:100%;
+			width:95%;
+		}
+
+    	.tblMenu th {
+		  	height: 50px;
+		  	font-weight: bold;
+		  	text-align: center;
+		  	font-size: 18pt;
+		}
+		.tblMenu td {
+		 	text-align: center;
+		}
+
+		.tblBev th {
+		  	font-size: 18pt;
+		   	height: 50px;
+		   	text-align: center;
 		}
 
 		body{
@@ -37,8 +44,8 @@
 	<br><br>
 	<hr>
 	<div>
-		<p>
-			<table>
+		<br>
+			<table class="tblMenu">
 				<tr>
 					<th>Burger and Fries</th>
 					<th>Hot Dog and Chips</th>
@@ -99,8 +106,30 @@
 					</td>
 				</tr>
 			</table>
-		</p>
-	</div>
+		</div>
+		<div>
+			<table class="tblBev" align="center" style="width:15%;">
+				<tr>
+					<th colspan="2">Beverages</th>
+				</tr>
+				<tr>
+					<td>Root Beer</td>
+					<td>$3.00</td>
+				<tr>
+	
+					<td>Bottled Water</td>
+					<td>$1.25</td>
+				</tr>
+				</tr>
+				<tr>
+					<td>Lemonade</td>
+					<td>$1.00</td>
+				<tr>
+					<td>Iced Tea</td>
+					<td>$1.25</td>
+				</tr>
+			</table>
+		</div>
 	<br>
     <hr>
     	<div class="footer">
