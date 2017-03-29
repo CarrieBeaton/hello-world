@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+    <!-- Latest compiled and minified JavaScript -->
+     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script> -->
     <title>The Wall</title>
     <link href="albumStyles.css" 
       rel="stylesheet" 
@@ -29,22 +40,29 @@
             right: 0px;
             opacity: 0.12;
         }
-        .image{
+      /*  .image{
             background: url("Images/PinkFloydTheWall.jpg") repeat-x;
             width: 100%;
             height: 300px;
             background-size: 300px;
             background-position: top right;
+        }*/
+        .img-circle{
+            width: 300px;
+            height: 300px;
+            margin-left:auto;
+            margin-right: auto;
+            display: block;
         }
     </style>
 </head>
 <body>
-  <div class="backgroundImage"></div>
-  <div>
+  <div class="container">
+    <div class="backgroundImage" class="img-responsive"></div>
     <p>  
-    <div class="image"></div>
+    <div>
+    <img src="Images/PinkFloydTheWall.jpg" class="img-circle" style="" alt="Pink Floyd Album Cover"></div>
     <br/>
-
        <center><h1 style="color:red;font-family: Garamond">The Wall</h1></center>
             <a href="http://www.pinkfloyd.com/" target="_blank">Pink Floyd</a>
         <center><h3>November, 30 1979</h3></center>
@@ -58,13 +76,15 @@
             <li>Richard Wright - musician</li>
             <li>Producers: Bob Ezrin, David Gilmour, James Guthrie, Roger Waters</li>
         </ul>
-        <table>
-            <caption>Tracks</caption>
+        <div>
+        <table class="table-hover table-responsive">
+            <caption style="text-align:center;"">Tracks</caption>
             <tr>
                 <th>Track #</th>
                 <th>Track Title</th>
                 <th>Track Length</th>
             </tr>
+            <tbody>
             <tr>
                <td>1</td>
                <td>In the Flesh</td>
@@ -195,8 +215,10 @@
                <td>Outside the Wall</td>
                <td>1:44</td>
             </tr>
+            </tbody>
         </table>
+        </div>
+    </div>
     </p>
-  </div>
 </body>
 </html>

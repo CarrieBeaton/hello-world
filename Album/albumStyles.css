@@ -2,24 +2,14 @@
       font-weight: bold;
       text-align: center;
       background: LightSlateGray;
-      border-bottom:1pt solid black;
-      border: 1px solid black;
+/*      border-bottom:1pt solid black;*/
+     /* border: 1px solid black;*/
    }
   td {
       text-align: center;
       font-style:italic;
       border:1px solid black;
    }
-  tr {
-      border-bottom:1pt;
-      border-color:solid black;
-  }
-  tbody tr:nth-child(even) {
-      background-color: #BA3838;
-  }
-  tbody tr:nth-child(odd) {
-    background-color: #6C9AEE;
-  }
   table{
     table-layout: fixed;
     margin: 0 auto;
@@ -27,5 +17,10 @@
     width:75%;
     border-style: solid;
     border: 1px solid black;
+    background: #CC0000;
+
+  }
+  tr:nth-of-type(odd) {
+    background: #6C9AEE;
   }
 
