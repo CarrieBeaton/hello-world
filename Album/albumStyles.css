@@ -2,14 +2,14 @@
       font-weight: bold;
       text-align: center;
       background: LightSlateGray;
-/*      border-bottom:1pt solid black;*/
-     /* border: 1px solid black;*/
    }
+
   td {
       text-align: center;
       font-style:italic;
       border:1px solid black;
    }
+
   table{
     table-layout: fixed;
     margin: 0 auto;
@@ -18,9 +18,8 @@
     border-style: solid;
     border: 1px solid black;
     background: #CC0000;
-
-  }
-  tr:nth-of-type(odd) {
-    background: #6C9AEE;
   }
 
+  .table-striped > tbody > tr:nth-child(odd) > td{
+    background-color: #6C9AEE;
+  }
