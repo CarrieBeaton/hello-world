@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script>
 	<title>Home Page</title>
         <link href="restaurantStyles.css" 
         rel="stylesheet" 
@@ -12,16 +17,33 @@
         <style type="text/css">
             .description {
                 border:1px solid black;
-                width: 500px;
+                width: 400px;
+                height: 150px;
                 display:block;
                 margin-left: auto;
                 margin-right:auto;
                 font-size: 16px;
                 font-family: Georgia, serif;
             }
+            .carousel-inner > .item > img,
+            .carousel-inner > .item > a > img {
+                width: 60%;
+                margin: auto;
+            }
+            .carousel-caption {
+                position: relative;
+                left: auto;
+                right: auto;
+            }
         </style>
 </head>
 <body>
+    <noscript>
+        <div class="alert alert-warning alert-dismissable">
+            For full functionality of this site it is necessary to enable JavaScript.
+            Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>
+        </div>
+    </noscript>
 	<h1>Carrie's Italian Cuisine</h1>
 	<hr>
     <div class="menu"> 
@@ -32,10 +54,48 @@
         </ul>   
     </div>
     <hr>
-        <div class="jumbotron vertical-center">
-            <h3>Big News!</h3> 
-                <p>Carrie's Italian Cuisine is opening a new location in Dover, NH!</p> 
+<div class="container">
+<br>
+    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mycarousel" data-slide-to="1"</li>
+        <li data-target="#mycarousel" data-slide-to="2"</li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="Images\new_location.jpg" alt="New Location" width="460" height="345">
+        <div class="carousel-caption">
+          <h2>Big News!</h2>
+          <p style="font-size: 18px">Carrie's Italian Cuisine is opening a new location in Dover, NH!</p>
         </div>
+      </div>
+       <div class="item">
+        <img src="Images\seasonal_food.jpg" alt="Specials" width="460" height="345">
+        <div class="carousel-caption">
+          <h2>Yum!</h2>
+          <p style="font-size: 18px;">We're rolling out our seasonal menu, with special options for this season.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="Images\sp_brew.jpg" alt="Drink" width="460" height="345">
+        <div class="carousel-caption">
+          <h2>Thirsty?</h2>
+          <p style="font-size: 18px">The Drink of the Month is SG Special Brew.</p>
+        </div>
+      </div>
+</div>
+  <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    </div>
      <hr>
     <div class="container">
         <div class="row">
