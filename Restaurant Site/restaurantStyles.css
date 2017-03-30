@@ -1,34 +1,9 @@
-.menu { 
-	padding:0; 
-	margin:0; 
-	width:400px; 
-	float:left;
-}
-.menu ul { 
-	padding:0; 
-	margin:0; 
-	list-style:none; 
-	border:0; 
-	float:left;
-}
-.menu ul li { 
-	float:left; 
-	margin:0; 
-	padding:0; 
-	border:0;
-}
-.menu ul li a{
-	float:left; 
-	margin:0; 
-	padding:13px 10px;  
-	border:1px;
-}
 .menu ul li a:link{
 	text-decoration: underline;
 	color: blue;
 }
 .menu ul li a:visited{
-	color:green;
+	color:#000000;
 }
 .menu ul li a:hover{
 	font-weight: bold;
@@ -38,15 +13,24 @@
 }
 .footer {
     text-align: center;
+    min-width: 600px;
 }
 h1{
       font-family:Verdana;
       text-align: center;
-}
-.backColor{
-	background-color: #20B2AA;
-	min-width: 800px;
+      min-width: 600px;
 }
 hr{
 	min-width: 800px;"
+}
+.jumbotron{
+    color: #20B2AA;
+    background-color: #FAFAD2;
+    text-align: center;
+    min-width: 600px;
+}
+.container {
+    background-color: #20B2AA;
+    min-width: 600px; 
+    width:75%;
 }

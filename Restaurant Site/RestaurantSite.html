@@ -5,17 +5,19 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"/>
 	<title>Home Page</title>
         <link href="restaurantStyles.css" 
         rel="stylesheet" 
         type="text/css"/>
         <style type="text/css">
             .description {
-                border:1px solid black; 
-                width:400px; 
-                align-content: center; 
-                margin:0 auto;
+                border:1px solid black;
+                width: 500px;
+                display:block;
+                margin-left: auto;
+                margin-right:auto;
+                font-size: 16px;
+                font-family: Georgia, serif;
             }
         </style>
 </head>
@@ -23,29 +25,40 @@
 	<h1>Carrie's Italian Cuisine</h1>
 	<hr>
     <div class="menu"> 
-        <ul>
-            <li><a href=RestaurantSite.html>Home</a></li>
+        <ul class="nav nav-pills">
+            <li class="active"><a class="glyphicon glyphicon-home" href=RestaurantSite.html></a></li>
             <li><a href="RestaurantMenu.html">Menu</a></li>
             <li><a href="RestaurantContact.html">Contact Us</a></li>
         </ul>   
     </div>
-        <br><br>
-    <div class="backColor">
-    	<hr>
-    	   <img src="Images\authentic_italian_food.jpg"
-                alt="Autentic Italian Food" 
-                style="width: 400px;display:block;margin-left: auto;margin-right: auto;"
-                /><br>
-        <div class="description">
-            <p> Restaurant Description <br>
-            	Serving Authentic Italian food using only the freshest ingredients. 
-            	From pasta to pizza, we offer a comprehensive selection with a menu that is
-            	constantly evolving and changing offer our guests the best variety of Italian food
-            	around!<br><br>
-            </p>
+    <hr>
+        <div class="jumbotron vertical-center">
+            <h3>Big News!</h3> 
+                <p>Carrie's Italian Cuisine is opening a new location in Dover, NH!</p> 
+        </div>
+     <hr>
+    <div class="container">
+        <div class="row">
+        <br>
+            </div class="col-sm-12"> 
+                	<img class="description" src="Images\authentic_italian_food.jpg"
+                            alt="Autentic Italian Food"/>
+                    <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="description" style="padding-left: 5px;">
+                    <p> Restaurant Description <br>
+                    	Serving Authentic Italian food using only the freshest ingredients. 
+                    	From pasta to pizza, we offer a comprehensive selection with a menu that is
+                    	constantly evolving and changing offer our guests the best variety of Italian food
+                    	around!<br>
+                    </p>
+                </div>
+                <br>
+            </div>
+        </div>
         </div>
         <hr>
-    </div>
         <div class="footer">
             140 Main St. Alton, NH 03809 <br>
              603-875-5333<br>

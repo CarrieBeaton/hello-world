@@ -5,34 +5,55 @@
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"/>
 	<title>Menu</title>
 	 <link href="restaurantStyles.css" 
       rel="stylesheet" 
       type="text/css"/>
 	<style type="text/css">
-		table{
-			width:95%;
+		.container {
+		    width:100%;
+		    text-align:center;
+		    background: linear-gradient(#FAFAD2, #20B2AA);
 		}
 
-    	.tblMenu th {
-		  	height: 50px;
-		  	font-weight: bold;
-		  	text-align: center;
-		  	font-size: 18pt;
-		}
-		.tblMenu td {
-		 	text-align: center;
+		.left {
+		    float:left;
+		    width:33.3%;
 		}
 
-		.tblBev th {
+		.center {
+		    display: inline-block;
+		    width:33.3%;
+		}
+
+		.right {
+		    float:right;
+		    width:33.3%;
+		}
+
+		.leftH {
+		    float:left;
+		    width:33.3%;
+		    font-weight: bold;
 		  	font-size: 18pt;
-		   	height: 50px;
-		   	text-align: center;
+		}
+
+		.centerH {
+		    display: inline-block;
+		    width:33.3%;
+		    font-weight: bold;
+		  	font-size: 18pt;
+		}
+
+		.rightH {
+		    float:right;
+		    width:33.3%;
+		    font-weight: bold;
+		  	font-size: 18pt;
 		}
 
 		body{
-			background: linear-gradient(#FAFAD2, #20B2AA);
+			background: linear-gradient(#FFFBF2, #20B2AA);
 		}
 	</style>
 </head>
@@ -40,102 +61,105 @@
 	<h1>Carrie's Italian Cuisine</h1>
 	<hr>
 	<div class="menu"> 
-		<ul>
-			<li><a href=RestaurantSite.html>Home</a></li>
-			<li><a href="RestaurantMenu.html">Menu</a></li>
+		<ul class="nav nav-pills">
+			<li><a class="glyphicon glyphicon-home"  href=RestaurantSite.html></a></li>
+			<li class="active" style="color:#F0FFFF"><a href="RestaurantMenu.html">Menu</a></li>
 			<li><a href="RestaurantContact.html">Contact Us</a></li>
 		</ul>	
 	</div>
-	<br><br>
 	<hr>
-	<div>
+	<div class="container">
+		<div class="row">
 		<br>
-			<table class="tblMenu">
-				<tr>
-					<th>Burger and Fries</th>
-					<th>Hot Dog and Chips</th>
-					<th>Italian Sausage and Peppers</th>
-				</tr>
-				<tr>
-					<td>
-						An American Classic!<br>
-						Pickle, onion, tomato, and lettuce<br>
-						Served with our famous thick cut<br>
-						french fries<br>
-						$7.95<br>
-					</td>
-					<td>
-						A Summer Classic!<br>
-						Your choice - white or wheat bun<br>
-						Relish, mustard, and ketchup<br>
-						Served with our house-made chips<br>
-						$7.95<br>
-					</td>
-					<td>
-						An All-Time Favorite!!<br>
-						Your choice - mild or spicy<br>
-						Cole Slaw<br>
-						Served with garlic mashers<br>
-						$10.95<br>
-					</td>
-				</tr>
-				<tr>
-					<th>Tenderloin Sandwich and Chips</th>
-					<th>House Salad</th>
-					<th>Brisket Sandwich and Fries</th>
-				</tr>
-				<tr>
-					<td>
-						Really Hits the Spot!<br>
-						Plain or Sesame Seed Bun<br>
-						Pickle, onion, tomato, and lettuce<br>
-						Served with our house-made chips<br>
-						$8.95<br>
-					</td>
-					<td>
-						On the Lighter Side<br>
-						Your choice - with or without cheese<br>
-						Iceberg lettuce, tomatoes, peppers<br>
-						Thousand Island or Ranch Dressing<br>
-						Served with a dinner roll<br>
-						$6.95<br>
-					</td>
-					<td>
-						A Taste of Texas<br>
-						Smoked Brisket on thick-cut Texas<br>
-						Toast<br>
-						Cole Slaw<br>
-						Served with our famous thick cut<br>
-						french fries<br>
-						$7.95<br>
-					</td>
-				</tr>
-			</table>
-		</div>
-		<div>
-			<table class="tblBev" align="center" style="width:15%;">
-				<tr>
-					<th colspan="2">Beverages</th>
-				</tr>
-				<tr>
-					<td>Root Beer</td>
-					<td>$3.00</td>
-				<tr>
-	
-					<td>Bottled Water</td>
-					<td>$1.25</td>
-				</tr>
-				</tr>
-				<tr>
-					<td>Lemonade</td>
-					<td>$1.00</td>
-				<tr>
-					<td>Iced Tea</td>
-					<td>$1.25</td>
-				</tr>
-			</table>
-		</div>
-	<br>
+			</div class="col-sm-12"> 
+			<div class="leftH">
+				Burger and Fries
+			</div>
+			<div class="centerH">
+				Hot Dog and Chips
+			</div>
+			<div class="rightH">
+				Italian Sausage and Peppers
+			</div>
+		<div class="row">
+			</div class="col-sm-12">
+			<br> 
+			<div class="left">
+				An American Classic!<br>
+				Pickle, onion, tomato, and lettuce<br>
+				Served with our famous thick cut<br>
+				french fries<br>
+				$7.95<br>
+			</div>
+			<div class="center">
+				A Summer Classic!<br>
+				Your choice - white or wheat bun<br>
+				Relish, mustard, and ketchup<br>
+				Served with our house-made chips<br>
+				$7.95<br>
+			</div>
+			<div class="right">
+				An All-Time Favorite!!<br>
+				Your choice - mild or spicy<br>
+				Cole Slaw<br>
+				Served with garlic mashers<br>
+				$10.95<br>
+			</div>
+			<div class="row">
+			</div class="col-sm-12">
+			<br> 
+			<div class="leftH">
+				Tenderloin Sandwich and Chips
+			</div>
+			<div class="centerH">
+				House Salad
+			</div>
+			<div class="rightH">
+				Brisket Sandwich and Fries
+			</div>
+			<div class="row">
+			</div class="col-sm-12">
+			<br> 
+			<div class="left">
+				Really Hits the Spot!<br>
+				Plain or Sesame Seed Bun<br>
+				Pickle, onion, tomato, and lettuce<br>
+				Served with our house-made chips<br>
+				$8.95<br>
+			</div>
+			<div class="center">
+				On the Lighter Side<br>
+				Your choice - with or without cheese<br>
+				Iceberg lettuce, tomatoes, peppers<br>
+				Thousand Island or Ranch Dressing<br>
+				Served with a dinner roll<br>
+				$6.95<br>
+			</div>
+			<div class="right">
+				A Taste of Texas<br>
+				Smoked Brisket on thick-cut Texas<br>
+				Toast<br>
+				Cole Slaw<br>
+				Served with our famous thick cut<br>
+				french fries<br>
+				$7.95<br>
+			</div>
+			<div class="row">
+			</div class="col-sm-12">
+			<br> 
+			<div class="centerH">
+				Beverages
+			</div>
+			<div class="row">
+			</div class="col-sm-12">
+			<br> 
+			<div class="center" style="text-align: left;padding-left: 5em;min-width: 300px;max-width: 375px;">
+				Root Beer<div style="padding-right: 5em;display: inline-block;float: right;">$3.00</div><br>
+				Bottled Water<div style="padding-right: 5em;display: inline-block;float: right;">$1.25</div><br>
+				Lemonade<div style="padding-right: 5em;display: inline-block;float: right;">$1.00</div><br>
+				Iced Tea<div style="padding-right: 5em;display: inline-block;float: right;">$1.25</div><br><br>
+			</div>
+	</div>
     <hr>
     	<div class="footer">
     		140 Main St. Alton, NH 03809 <br>
