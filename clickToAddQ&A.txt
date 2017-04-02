@@ -1,0 +1,7 @@
+•What happens when you leave num1 or num2 empty?
+The message appears "This site says...Num1 must be filled in with a number."
+The message appears "This site says...Num2 must be filled in with a number."
+•For browsers that do not support the input type of "number," what happens when you enter in alphanumeric (letters and numbers) values?
+Please enter a number displays below and the field is brought to focus and has a red border.a
+•What happens if you enter "0" for num2? How does JavaScript handle the divide-by-zero situation?
+The result set states infinity.
